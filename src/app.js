@@ -9,7 +9,6 @@ import 'express-async-errors';
 import routes from './routes';
 
 // Uncomment this line to enable database access
-// --------
 import './database';
 
 class App {
