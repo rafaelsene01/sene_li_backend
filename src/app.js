@@ -2,6 +2,7 @@ import './bootstrap';
 
 import Youch from 'youch';
 import cors from 'cors';
+import helmet from 'helmet';
 import express from 'express';
 import 'express-async-errors';
 
