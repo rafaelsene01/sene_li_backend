@@ -24,7 +24,7 @@
     "jest": "^24.8.0",
     "nodemon": "^1.19.1",
     "prettier": "^1.18.2",
-    "sqlite3": "^4.0.9",
+    "sqlite3": "^4.1.0",
     "sucrase": "^3.10.1",
     "supertest": "^4.0.2"
   },
