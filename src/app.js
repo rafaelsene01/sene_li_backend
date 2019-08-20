@@ -16,6 +16,21 @@ import sentryConfig from './config/sentry';
 // Uncomment this line to enable database access
 import './database';
 
+const whitelist = [
+  `https://${process.env.FRONT_URL}`,
+  `https://app.${process.env.FRONT_URL}`,
+];
+
+const corsOptions = {
+  origin(origin, callback) {
+    if (whitelist.indexOf(origin) !== -1) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
+};
+
 class App {
   constructor() {
     this.server = express();
@@ -30,7 +45,7 @@ class App {
   middlewares() {
     this.server.use(Sentry.Handlers.requestHandler());
 
-    this.server.use(cors({ origin: process.env.FRONT_URL }));
+    this.server.use(cors(corsOptions));
     this.server.use(helmet());
     this.server.use(express.json());
 
