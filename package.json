@@ -44,7 +44,7 @@
     "rate-limit-redis": "^1.6.0",
     "redis": "^2.8.0",
     "sequelize": "^5.15.0",
-    "sequelize-cli": "^5.5.0",
+    "sequelize-cli": "^5.5.1",
     "youch": "^2.0.10",
     "yup": "^0.27.0"
   }
