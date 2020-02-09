@@ -42,7 +42,7 @@
     "jsonwebtoken": "^8.5.1",
     "pg": "^7.12.1",
     "rate-limit-redis": "^1.6.0",
-    "redis": "^2.8.0",
+    "redis": "^3.0.0",
     "sequelize": "^5.15.0",
     "sequelize-cli": "^5.5.0",
     "youch": "^2.0.10",
